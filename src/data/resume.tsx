@@ -145,7 +145,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://notion-clone-nuns9dfy9-rohit-singhs-projects-a0526b8a.vercel.app/",
+          href: "https://notionclone-project.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
