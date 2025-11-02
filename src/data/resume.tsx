@@ -122,7 +122,7 @@ export const DATA = {
       href: "https://sxsdgp.edu.in/",
       degree: "Matriculation",
       logoUrl: "/SXS.png",
-      start: "2017",
+      start: "2007",
       end: "2018",
     },
   ],
@@ -130,7 +130,7 @@ export const DATA = {
     {
       title: "Notion-AI Clone",
       href: "https://notion-clone-nuns9dfy9-rohit-singhs-projects-a0526b8a.vercel.app/",
-      dates: "May 2024 - July 2024",
+      dates: "May 2025 - July 2025",
       active: true,
       description:
         "Built a full-stack Notion-style AI note-taking platform with real-time collaboration, rich-text editing, and AI-powered content generation using Next.js and OpenAI API. Integrated Firebase for scalable data handling and Cloudflare Workers for serverless backend logic. Implemented secure Clerk authentication with role-based access for seamless user collaboration.",
