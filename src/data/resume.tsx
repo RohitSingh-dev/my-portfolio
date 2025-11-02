@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, DownloadIcon } from "lucide-react";
 
 export const DATA = {
   name: "Rohit Singh",
@@ -30,8 +30,8 @@ export const DATA = {
     "Cloudflare Workers"
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/", icon: HomeIcon, label: "Home", download: false },
+    { href: "/cv", icon: DownloadIcon, label: "Download CV", download: true },
   ],
   contact: {
     email: "rohitsingh20082002@gmail.com",

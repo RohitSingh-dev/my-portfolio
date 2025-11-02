@@ -20,15 +20,28 @@ export default function Navbar() {
           <DockIcon key={item.href}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link
-                  href={item.href}
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12"
-                  )}
-                >
-                  <item.icon className="size-4" />
-                </Link>
+                {item.download ? (
+                  <a
+                    href="/CV.pdf" // place your CV file in the public folder
+                    download
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-12"
+                    )}
+                  >
+                    <item.icon className="size-4" />
+                  </a>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      buttonVariants({ variant: "ghost", size: "icon" }),
+                      "size-12"
+                    )}
+                  >
+                    <item.icon className="size-4" />
+                  </Link>
+                )}
               </TooltipTrigger>
               <TooltipContent>
                 <p>{item.label}</p>
@@ -36,6 +49,7 @@ export default function Navbar() {
             </Tooltip>
           </DockIcon>
         ))}
+
         <Separator orientation="vertical" className="h-full" />
         {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)
